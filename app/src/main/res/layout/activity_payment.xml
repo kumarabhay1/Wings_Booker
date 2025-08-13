@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvPaymentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Summary"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/alata"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Passenger Info Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:id="@+id/tvPassengerSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:text="Passenger: John Doe\nEmail: john@example.com\nPhone: 1234567890\nAge: 25\nGender: Male\nNationality: Indian"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/alata" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Price Summary Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:id="@+id/tvTotalPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Price: ₹4500"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/alata"
+                android:padding="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Payment Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPayNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay &amp; Confirm Booking"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/alata"
+            android:textSize="20sp"
+            android:padding="14dp"
+            app:cornerRadius="20dp"
+        app:iconPadding="12dp"
+        app:iconTint="@android:color/white" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/splash_logo"/>
+    </LinearLayout>
+</ScrollView>

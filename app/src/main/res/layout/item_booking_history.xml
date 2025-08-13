@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="12dp"
+    android:background="@android:color/white"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <!-- Name badge-style with gradient background and shadow -->
+        <TextView
+            android:id="@+id/bookingName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal"
+            android:elevation="4dp"
+            android:background="@drawable/gradient_name_badge"
+            android:shadowColor="#66000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4" />
+
+        <!-- Divider line with margin -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginVertical="16dp"
+            android:background="#CCC" />
+
+        <!-- Info block with icons and text -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <!-- Each info row: icon + text -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_email_24"
+                    android:contentDescription="Email icon"
+                    android:layout_marginEnd="12dp"
+                    app:tint="#2E3A59" />
+
+                <TextView
+                    android:id="@+id/bookingEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email: john@example.com"
+                    android:textColor="#2E3A59"
+                    android:fontFamily="@font/alata"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_phone_24"
+                    android:contentDescription="Phone icon"
+                    android:layout_marginEnd="12dp"
+                    app:tint="#2E3A59" />
+
+                <TextView
+                    android:id="@+id/bookingPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone: +91 12345 67890"
+                    android:textColor="#2E3A59"
+                    android:fontFamily="@font/alata"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_location_from"
+                    android:contentDescription="From location icon"
+                    android:layout_marginEnd="12dp"
+                    app:tint="#2E3A59" />
+
+                <TextView
+                    android:id="@+id/bookingFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From: Delhi (DEL)"
+                    android:textColor="#2E3A59"
+                    android:fontFamily="@font/alata"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_location_to"
+                    android:contentDescription="To location icon"
+                    android:layout_marginEnd="12dp"
+                    app:tint="#2E3A59" />
+
+                <TextView
+                    android:id="@+id/bookingTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To: Mumbai (BOM)"
+                    android:textColor="#2E3A59"
+                    android:fontFamily="@font/alata"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_flag"
+                    android:contentDescription="Nationality icon"
+                    android:layout_marginEnd="12dp"
+                    app:tint="#2E3A59" />
+
+                <TextView
+                    android:id="@+id/bookingNationality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nationality: Indian"
+                    android:textColor="#2E3A59"
+                    android:fontFamily="@font/alata"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Cancel button -->
+        <Button
+            android:id="@+id/btnCancelBooking"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#D32F2F"
+            android:text="Cancel Booking"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:fontFamily="@font/alata"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_cancel"
+            android:drawablePadding="8dp"
+            android:elevation="6dp"
+            android:stateListAnimator="@null"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

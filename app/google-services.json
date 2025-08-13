@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "248220054141",
+    "project_id": "wingsbooker",
+    "storage_bucket": "wingsbooker.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248220054141:android:cd7cdf52343408fc15f714",
+        "android_client_info": {
+          "package_name": "com.example.airticket"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADqIk1CRzAKmWceDG6xTWwD7oGEf_Jt48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
