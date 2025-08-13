@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)  # ✅ Allow cross-origin requests (important for Android)
 
 # API config for flight data (AviationStack)
-AVIATIONSTACK_API_KEY = '3a61cd6340a9e4ce12c44bcd16d71c80'
+AVIATIONSTACK_API_KEY = 'YOUR_API_KEY'
 BASE_URL = 'http://api.aviationstack.com/v1/flights'
 
 BOOKINGS_FILE = 'bookings.json'  # 📁 File to store passenger bookings
@@ -142,3 +142,4 @@ def update_profile():
 if __name__ == '__main__':
     # 📡 Host: 0.0.0.0 to make it accessible from Android emulator
     app.run(host="0.0.0.0", port=5000, debug=True)
+
